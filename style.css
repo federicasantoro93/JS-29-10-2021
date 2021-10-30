@@ -5,21 +5,28 @@ body {
     align-items: center;
     text-align: center;
     box-sizing: border-box; /*La proprietà CSS box-sizing ci consente di includere il padding e il bordo nella larghezza e altezza totali di un elemento.*/
+    background-color: #1A4040;
+    font-family: 'David Libre', serif;
+    
 }
-  
-img {
-    border:solid 2px;
-    border-bottom-color:#ffe;
-    border-left-color:#eed;
-    border-right-color:#eed;
-    border-top-color:#ccb;
-    max-height:100%;
-    max-width:100%;
+
+h1{ 
+    color:#B0D9D5;
+    font-family: 'David Libre', serif;
+    font-weight: 700; 
+    margin-top: 1vh;
+    font-size: 40px;
+  }
+
+img{
+    max-width: 100%; 
+    height: auto;
+
 }
   
 .frame {
-    background-color:#ddc;
-    border:solid 5vmin #eee;
+    background-color:#B4BF60;
+    border:solid 4vmin #eee;
     border-bottom-color:#fff;
     border-left-color:#eee;
     border-radius:2px;
@@ -28,31 +35,54 @@ img {
     box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
     box-sizing:border-box;
     display:block;
-    margin:5vh 0;
+    margin:1vh;
     height:80vh;
-    padding:8vmin;
     position:relative;
     text-align:center;
 }
-    
-.frame::before {
-      border-radius: 2px;
-      bottom:-2vmin;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,.25) inset;
-      content: "";
-      left: -2vmin;
-      position:absolute;
-      right: -2vmin;
-      top: -2vmin;
+
+.img-text {
+    float: center;
+    position: relative;
+   
+}
+.img-text img {
+    float: center;
+      
+}
+.img-text span {
+    float: center;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    color: #BF754B;
+    font-size: 45px;
+    text-shadow: 0 0 5px whitesmoke;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    bottom: 300px;
+
 }
 
-.frame:after {
-      border-radius:2px;
-      bottom:-2.5vmin;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-      content:"";
-      left:-2.5vmin;
-      position:absolute;
-      right:-2.5vmin;
-      top:-2.5vmin;
+  
+button{
+    color:#1A4040;
+    background:#BF754B;
+    border: 2px solid #1A4040;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+    margin: 5px;
+    padding: 5px;
+    
+
+}
+
+.frase-foto-input {
+    height: auto;
+    width:300px;
+    display:block;
+    font-weight: 400;
+
 }

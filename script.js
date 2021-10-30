@@ -22,6 +22,7 @@ un dizionario/rubrica gestendo il flusso con i nuovi concetti di Parent / Childr
 visti oggi.
 */
 
+//BOTTONE CHE PERMETTE DI CAMBIARE FOTO
 const changeImgBtn= document.querySelector(".change-img")
 
 changeImgBtn.addEventListener("click", () =>{
@@ -31,3 +32,5 @@ changeImgBtn.addEventListener("click", () =>{
 // Il metodo reload dell'oggetto location permette di ricaricare la pagina corrente:
 //window.location.reload() metodo reloadù
 //Se lo applico a un bottone, questo mi darà l'impressione di sfogliare una gallery
+
+//BOTTONE CHE AGGIUNGE IL TESTO SULLA FOTO
