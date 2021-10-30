@@ -48,14 +48,14 @@ changeImgBtn.addEventListener("click", () =>{
    const textInputnode = inputWrapper.firstChild; //ritorna il nodo del primo elemento (l'input)
    const textInput = inputWrapper.firstElementChild; //ritorna il primo elemento (l'input)
 
-   console.log(textInputnode);
-   console.log(textInput);
+   //console.log(textInputnode);
+   //console.log(textInput);
   
    function getVal() {
       const val = document.querySelector('input').value;
-      console.log(val);
+      //console.log(val);
       newText.textContent = (val);
-    }
+   }
 
    const changeInsTextBtn= document.querySelector(".add-text")
 
@@ -70,6 +70,9 @@ changeImgBtn.addEventListener("click", () =>{
     const newText = document.createElement("p");
     const wrapperImgText = document.querySelector(".img-text");
   newText.className = "testo-foto";
-  newText.textContent = (getVal());
+  //newText.textContent = (getVal());
    
 
+  newText.className += "testo-foto";
+
+console.log (newText);
