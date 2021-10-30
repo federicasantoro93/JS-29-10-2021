@@ -34,3 +34,42 @@ changeImgBtn.addEventListener("click", () =>{
 //Se lo applico a un bottone, questo mi darà l'impressione di sfogliare una gallery
 
 //BOTTONE CHE AGGIUNGE IL TESTO SULLA FOTO
+/*
+1. Riprendendo la pagina web creata a lezione, voglio che il bottone che `rinomina l'elemento H1`
+   aggiunga un testo inserito dall'utente, tramite prompt.
+
+   Opzionale: create un elemento `<input>` e fate aggiungere il testo all'utente non più tramite
+   il prompt ma tramite quel campo di `input`.
+   TIP: anche `<input>` è un elemento, e presenta delle chiavi...
+   tra queste ne trovate una anche per il testo in esso inserito...
+   */
+
+   const inputWrapper = document.querySelector(".frase-foto"); //div contenente l'input
+   const textInputnode = inputWrapper.firstChild; //ritorna il nodo del primo elemento (l'input)
+   const textInput = inputWrapper.firstElementChild; //ritorna il primo elemento (l'input)
+
+   console.log(textInputnode);
+   console.log(textInput);
+  
+   function getVal() {
+      const val = document.querySelector('input').value;
+      console.log(val);
+      newText.textContent = (val);
+    }
+
+   const changeInsTextBtn= document.querySelector(".add-text")
+
+   changeInsTextBtn.addEventListener("click", () =>{
+
+         wrapperImgText.appendChild(newText);
+         //getVal(); 
+    },
+    { once: true });
+    
+   
+    const newText = document.createElement("p");
+    const wrapperImgText = document.querySelector(".img-text");
+  newText.className = "testo-foto";
+  newText.textContent = (getVal());
+   
+
