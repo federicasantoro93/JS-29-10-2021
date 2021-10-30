@@ -55,9 +55,14 @@ changeImgBtn.addEventListener("click", () =>{
       const val = document.querySelector('input').value;
       //console.log(val);
       newText.textContent = (val);
+      newText.className = "testo-foto";
    }
 
    const changeInsTextBtn= document.querySelector(".add-text")
+   const newText = document.createElement("p");
+   const wrapperImgText = document.querySelector(".img-text");
+ //newText.className = "testo-foto";
+ //newText.textContent = (getVal());
 
    changeInsTextBtn.addEventListener("click", () =>{
 
@@ -67,12 +72,13 @@ changeImgBtn.addEventListener("click", () =>{
     { once: true });
     
    
-    const newText = document.createElement("p");
-    const wrapperImgText = document.querySelector(".img-text");
-  newText.className = "testo-foto";
-  //newText.textContent = (getVal());
+  
    
 
-  newText.className += "testo-foto";
+  //newText.className += "testo-foto";
 
 console.log (newText);
+console.log(wrapperImgText.children); 
+console.log(wrapperImgText.lastElementChildren);
+console.log(inputWrapper.children); //p non si trova nemmeno qui
+//Ndo sta p?
