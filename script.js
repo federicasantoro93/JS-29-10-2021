@@ -55,7 +55,7 @@ changeImgBtn.addEventListener("click", () =>{
       const val = document.querySelector('input').value;
       //console.log(val);
       newText.textContent = (val);
-      newText.className = "testo-foto";
+      //newText.className = "testo-foto";
    }
 
    const changeInsTextBtn= document.querySelector(".add-text")

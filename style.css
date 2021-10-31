@@ -50,6 +50,8 @@ img{
     float: center;
       
 }
+
+/*
 .img-text span {
     float: center;
     margin: 0;
@@ -64,7 +66,26 @@ img{
     bottom: 300px;
 
 }
+*/
 
+.img-text p {
+    float: center;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    color: #BF754B;
+    font-size: 45px;
+    text-shadow: 0 0 5px whitesmoke;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    bottom: 300px;
+
+}
+
+/* Provo a stilizzare p e... Funziona!!!*/
+
+/*
 testo-foto{
     float: center;
     margin: 0;
@@ -78,6 +99,8 @@ testo-foto{
     left: 0;
     bottom: 300px;
 }
+*/
+/* Perchè non stilizza la classe?!!!*/
 
   
 button{
