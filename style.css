@@ -47,7 +47,9 @@ img{
    
 }
 .img-text img {
-    float: center;
+    width:100%;
+    height: auto;
+    
       
 }
 
@@ -69,17 +71,18 @@ img{
 */
 
 .img-text p {
-    float: center;
-    margin: 0;
-    padding: 10px;
+    margin: 0 auto;
+    max-width: 150px;
+    max-height: 250px;
+    padding: 50px 50px;
     width: 100%;
-    color: #BF754B;
-    font-size: 45px;
+    color: #1A4040;
+    font-size: 20px;
+    text-align: center;
     text-shadow: 0 0 5px whitesmoke;
     font-weight: 700;
     position: absolute;
-    left: 0;
-    bottom: 300px;
+    bottom: 40%;
 
 }
 
